@@ -72,7 +72,7 @@ const Sidebar = ({ setMode,mode }) => {
             </ListItemButton>
           </ListItem>
         </List>
-      <Fab sx={{ position:"absolute", left:"0px",bottom:"20px", bgcolor:"primary.dark", "&:hover":{bgcolor:"primary.light"}}}>
+      <Fab sx={{ position:"absolute", left:"0px",bottom:"10px", bgcolor:"primary.dark", "&:hover":{bgcolor:"primary.light"}}}>
         <Add />
       </Fab>
       </Box>

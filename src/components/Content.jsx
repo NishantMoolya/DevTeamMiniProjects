@@ -1,6 +1,5 @@
 import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Container, IconButton, ImageList, ImageListItem, Typography } from '@mui/material'
 import React from 'react';
-import lizard from "../lizard.jpg";
 import { Favorite, FavoriteBorder, MoreVert, Share } from '@mui/icons-material';
 import images from "./images";
 

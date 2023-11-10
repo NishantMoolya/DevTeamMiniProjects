@@ -1,13 +1,9 @@
 import { Avatar, AvatarGroup, Box, Divider, ImageList, ImageListItem, List, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material'
 import React from 'react';
-import lizard from "../lizard.jpg";
-import pic1 from "../pic1.jpg";
-import pic2 from "../pic2.jpg";
-import pic3 from "../pic3.jpg";
-import pic4 from "../pic4.jpg";
-import pic5 from "../pic5.jpg";
-import pic6 from "../pic6.jpg";
-import pic7 from "../pic7.jpg";
+import images from "./images";
+import pic3 from "../img/pic3.jpg";
+import pic4 from "../img/pic4.jpg";
+import pic5 from "../img/pic5.jpg";
 
 const Rightbar = () => {
   return (
@@ -15,15 +11,11 @@ const Rightbar = () => {
       <Box position="fixed" height="90vmin">
        <Typography variant="h6">Online friends</Typography>
        <AvatarGroup max={7}>
-        <Avatar src={pic1}/>
-        <Avatar src={pic2}/>
-        <Avatar src={pic3}/>
-        <Avatar src={pic4}/>
-        <Avatar src={pic5}/>
-        <Avatar src={pic6}/>
-        <Avatar src={pic7}/>
-        <Avatar src={pic2}/>
-        <Avatar src={pic1}/>
+        {
+          images.map((img,ind) => {
+            return(<Avatar src={img}key={ind}/>)
+          })
+        }
        </AvatarGroup>
        <Typography variant="h6">Photos</Typography>
        <ImageList rowHeight={120} gap={5} cols={3}>

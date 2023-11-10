@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { Home, Mail, Notifications, Person, Search, SearchRounded } from '@mui/icons-material'
 import { AppBar, Avatar, Badge, Box, Divider, IconButton, InputBase, Stack, TextField, Toolbar, Typography } from '@mui/material'
 import React from 'react';
-import pic3 from "../pic3.jpg";
+import pic3 from "../img/pic3.jpg";
 
 const StyledToolbar = styled(Toolbar)({
     display:"flex",
